@@ -75,7 +75,7 @@ proc check_advertise {nick uhost hand chan text} {
         } else {
             # First time encountering the user, initialize their data
             set advertise_data($nick) "$current_time|warn"
-            putserv "NOTICE $nick :Warning: You are violating channel and/or server rules! ( Reason: advertising )"
+            putserv "NOTICE $nick :Warning: You are violating channel and/or server rules! ( Reason: Advertising )"
             set advertise_data($nick) "$current_time|kick"
         }
     }
